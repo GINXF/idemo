@@ -1,0 +1,13 @@
+logging:
+  level:
+    com.idemo.mapper: debug
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      username: root
+      password: 123456
+      url: jdbc:mysql://localhost:3306/ibbs?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=true
+      driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
